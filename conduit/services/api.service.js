@@ -17,6 +17,9 @@ module.exports = {
 			authorization: true,
 
 			aliases: {
+				// Infinite Retry Loop
+				"GET /retry": "users.retry",
+				
 				// Login
 				"POST /users/login": "users.login",
 

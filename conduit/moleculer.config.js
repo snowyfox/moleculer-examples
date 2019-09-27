@@ -12,5 +12,11 @@ module.exports = {
 			maxParamsLength: 100
 		}
 	},
-	metrics: true
+	metrics: true,
+	retryPolicy: {
+		enabled: true,
+	},
+	registry: {
+		preferLocal: false,
+	},
 };

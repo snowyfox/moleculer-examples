@@ -44,6 +44,19 @@ module.exports = {
 	 */
 	actions: {
 		/**
+		 * Trigger Infinite Retry Loop
+		 *
+		 * @actions
+		 *
+		 * @returns Error of infinite retries
+		 */
+		retry: {
+			handler(ctx) {
+				return ctx.call('some.made.up.action');
+			}
+		},
+		
+		/**
 		 * Register a new user
 		 *
 		 * @actions
